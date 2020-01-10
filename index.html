@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Francisco Zapata" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("a.scroll").scrollomatic();
+      });
+    </script>
+    <title>Workshop 2 HTML5 y CSS3</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#home" class="scroll">
+        <div id="logo"></div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#temas" class="scroll">Temas</a></li>
+          <li><a href="#galeria" class="scroll">Galería</a></li>
+          <li><a href="#contacto" class="scroll">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <video autoplay loop preload="auto">
+        <source src="video/video.mp4" type="video/mp4" />
+        <source src="video/video.ogv" type="video/ogg" />
+        <source src="video/video.webm" type="video/webm" />
+        <p>
+          Su navegador no soporta este tipo de medios. Por favor actualice su
+          navegador.
+        </p>
+      </video>
+
+      <section id="home">
+        <div id="globo"></div>
+        <h2>Bienvenido al curso de <span>HTML5 & CSS3</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          voluptas atque ipsam similique tempora totam sapiente et, voluptatem
+          tempore reprehenderit.
+        </p>
+        <a href="#temas" class="scroll">Conozca más</a>
+        <div id="abajo"></div>
+      </section>
+
+      <section id="temas">
+        <h3>Temas</h3>
+        <article>
+          <div id="imagen1"></div>
+          <h4>Subtítulo nivel 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            molestias, numquam distinctio officiis assumenda odio.
+          </p>
+          <a href="#">Leer más</a>
+          <div id="imagen2"></div>
+          <h4>Subtítulo nivel 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            molestias, numquam distinctio officiis assumenda odio.
+          </p>
+          <a href="#">Leer más</a>
+          <div id="imagen3"></div>
+          <h4>Subtítulo nivel 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            molestias, numquam distinctio officiis assumenda odio.
+          </p>
+          <a href="#">Leer más</a>
+        </article>
+      </section>
+
+      <section id="galeria">
+        <h3>Galería</h3>
+        <div id="fotos">
+          <a href="#" title="Imagen1"><img src="img/1.jpg" alt="Imagen1"/></a>
+          <a href="#" title="Imagen2"><img src="img/2.jpg" alt="Imagen2"/></a>
+          <a href="#" title="Imagen3"><img src="img/3.jpg" alt="Imagen3"/></a>
+          <a href="#" title="Imagen4"><img src="img/4.jpg" alt="Imagen4"/></a>
+          <a href="#" title="Imagen5"><img src="img/5.jpg" alt="Imagen5"/></a>
+          <a href="#" title="Imagen6"><img src="img/6.jpg" alt="Imagen6"/></a>
+          <a href="#" title="Imagen7"><img src="img/7.jpg" alt="Imagen7"/></a>
+          <a href="#" title="Imagen8"><img src="img/8.jpg" alt="Imagen8"/></a>
+          <a href="#" title="Imagen9"><img src="img/9.jpg" alt="Imagen9"/></a>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h3>Contáctanos</h3>
+        <div id="formulario">
+          <form method="post">
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre y apellido"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="ejemplo@servidor.com"
+              required
+            />
+            <input
+              type="tel"
+              name="telefono"
+              pattern="+[0-9]{2}\s-[0-9]{10}$"
+              title="Por favor, sigue el patrón indicado"
+              placeholder="+12-1234567890"
+              required
+            />
+            <textarea
+              name="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              required
+            ></textarea>
+            <input type="submit" value="Enviar datos" />
+          </form>
+        </div>
+        <div id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31535.518161798795!2d-64.26052161462023!3d8.88519216791824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcd817e1043b5b7%3A0x5c5f23ae4dc752d9!2sEl%20Tigre%206050%2C%20Anzo%C3%A1tegui!5e0!3m2!1ses!2sve!4v1578347634303!5m2!1ses!2sve"
+            width="600"
+            height="450"
+          ></iframe>
+        </div>
+        <a href="#home" class="arriba scroll"></a>
+      </section>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!"
+          />
+        </a>
+      </p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!"
+          />
+        </a>
+      </p>
+      <footer>
+        <p>
+          Copyright &copy; 2020 Francisco Zapata - Todos los derechos reservados
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
